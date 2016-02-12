@@ -44,13 +44,16 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
 	__webpack_require__(1);
+
 	var component = __webpack_require__(5);
-	var app       = document.createElement('div');
+	var app = document.createElement('div');
 
 	document.body.appendChild(app);
 
-	app.appendChild( component() );
+	app.appendChild(component());
 
 /***/ },
 /* 1 */
@@ -406,8 +409,9 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	
-	module.exports = function() {
+	'use strict';
+
+	module.exports = function () {
 	  var el = document.createElement('h1');
 	  el.innerHTML = 'Hello World';
 	  return el;
